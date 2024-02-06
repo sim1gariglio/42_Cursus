@@ -1,0 +1,46 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Commands.txt                                       :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: sgarigli <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/21 12:26:42 by sgarigli          #+#    #+#              #
+#    Updated: 2023/11/21 12:57:42 by sgarigli         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+sudo chage -l <username>
+sudo ufw status
+sudo systemctl status ssh o sudo service ssh status
+lsb_release -a o hostnamectl
+
+sudo adduser <username> //create user
+sudo groupadd <groupname> // create group
+sudo groupdel
+sudo usermod -aG <groupname> <username> //add user to group
+getent group <groupname> //check
+
+sudo hostnamectl set-hostname <new_hostname> o sudo vim /etc/hostname
+
+lsblk //partizioni
+
+dpkg -l |grep sudo // check for sudo
+
+cat /var/log/sudo/sudo.log // da root
+
+sudo ufw status
+sudo ufw allow 8080
+sudo ufw delete allow 8080
+
+vim /etc/login.defs
+
+sudo aa-status //check apparmor
+
+sudo crontab -e
+
+etc/pam.d/common-password
+sudo visudo
+
+
+
