@@ -1,6 +1,4 @@
-Minishell tag team
-Anche io voglio essere un contributor quindi scrivo qualcosa qui
-ciao copilot
+Minishell ha rotto tutto
 
 
 ⭐️minishell_tester    ./tester ...⭐️
