@@ -6,7 +6,7 @@
 #    By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/01 10:48:55 by sgarigli          #+#    #+#              #
-#    Updated: 2024/01/12 11:23:49 by sgarigli         ###   ########.fr        #
+#    Updated: 2024/02/07 16:45:18 by sgarigli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,5 +52,9 @@ rebu:
 	@$(CC) $(CFLAGS) $(SRCS_S) $(LIBFT) -o $(NAME)
 	@$(CC) $(CFLAGS) $(SRCS_C) $(LIBFT) -o $(CLIENT)
 	@echo "Done !!"
+	
+parrot:
+	@curl parrot.live
+	kill
 
 .PHONY: all clean fclean re rebu ciao bonus

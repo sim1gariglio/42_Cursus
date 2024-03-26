@@ -58,7 +58,7 @@ static void	ft_action(int sig, siginfo_t *info, void *context)
 	if (bit == 8)
 		ft_print_word(&c, &received, &client_pid, &bit);
 	c <<= 1;
-	usleep(100);
+	usleep(10);
 	kill(client_pid, SIGUSR1);
 }
 

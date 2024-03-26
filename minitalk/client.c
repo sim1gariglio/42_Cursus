@@ -51,7 +51,7 @@ void	ft_send_character(int pid, unsigned char c)
 		c <<= 1;
 		i++;
 		pause();
-		usleep(100);
+		usleep(10);
 	}
 }
 

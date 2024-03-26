@@ -6,7 +6,7 @@
 #    By: sgarigli <sgarigli@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/01 10:48:55 by sgarigli          #+#    #+#              #
-#    Updated: 2024/02/06 16:39:40 by sgarigli         ###   ########.fr        #
+#    Updated: 2024/02/07 11:19:26 by sgarigli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,11 @@ clean:
 	@rm -f $(BONUS_NAME)
 
 fclean: clean
+	@make fclean -C .././philo_bonus
 
 re: fclean all 
 
-.PHONY: all clean fclean re
+bonus:
+	@make all -C .././philo_bonus
+
+.PHONY: all clean fclean re bonus
